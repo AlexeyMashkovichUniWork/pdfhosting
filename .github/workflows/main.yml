@@ -14,21 +14,6 @@ jobs:
   make-pdf:
     runs-on: ubuntu-latest
     timeout-minutes: 10
- 
-    # steps:
-    # - uses: actions/checkout@v4
-    # 
-    # - name: Compile LaTeX (XeLaTeX)
-      # uses: xu-cheng/latex-action@v4
-      # with:
-        # root_file: main.tex
-        # texlive_version: latest
-        # latexmk_use_xelatex: true
-
-
-    # - name: Move PDFs to public directory
-      # run: |
-        # mv *.pdf public/
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
